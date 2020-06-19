@@ -1,0 +1,33 @@
+.nav-link {
+    border-radius: 20px;
+}
+#homebtn {
+    background-color: #34495e;
+    color: #bdc3c7;
+    font-weight: bold;
+}
+#homebtn:hover {
+    background-color: #95a5a6;
+    color: #34495e;
+    font-weight: bold;
+}
+#harleybtn {
+    background-color: #000000;
+    color: #FF671F;
+    font-weight: bold;
+}
+#harleybtn:hover {
+    background-color: #FF671F;
+    color: #000000;
+    font-weight: bold;
+}
+#triumphbtn {
+    background-color: #000000;
+    color: #cd192d;
+    font-weight: bold;
+}
+#triumphbtn:hover {
+    background-color: #cd192d;
+    color: #000000;
+    font-weight: bold;
+}
