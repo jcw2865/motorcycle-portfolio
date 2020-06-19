@@ -14,3 +14,15 @@ body {
 #box3 {
     background-color: #e74c3c;
 }
+#ftdpic {
+    width: 75%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.card {
+    margin-bottom: 15px;
+    background-color: #000000;
+    color: #FF671F;
+}
