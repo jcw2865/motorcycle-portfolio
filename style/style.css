@@ -21,8 +21,25 @@ body {
     margin-right: auto;
     display: block;
 }
-.card {
+.card-hd {
     margin-bottom: 15px;
     background-color: #000000;
     color: #FF671F;
+}
+.card-triumph {
+    margin-bottom: 15px;
+    background-color: #000000;
+    color: #cd192d;
+}
+.btn-primary {
+    background-color: #34495e;
+    color: #bdc3c7;
+    border: 0;
+}
+.btn-primary:hover {
+    background-color: #bdc3c7;
+    color: #34495e;
+}
+.bikeh1 {
+    color: #bdc3c7;
 }
