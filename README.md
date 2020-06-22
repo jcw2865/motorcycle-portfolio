@@ -1,2 +1,4 @@
 # motorcycle-portfolio
-A portfolio for practicing HTML and CSS. 
+Work in Progress
+
+GitHub Pages: https://jcw2865.github.io/motorcycle-portfolio/
