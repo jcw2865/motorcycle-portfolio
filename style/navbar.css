@@ -31,6 +31,16 @@
     color: #000000;
     font-weight: bold;
 }
+#victorybtn {
+    background-color: silver;
+    color: #d8292f;
+    font-weight: bold;
+}
+#victorybtn:hover {
+    background-color: #d8292f;
+    color: silver;
+    font-weight: bold;
+}
 .navbar {
     background-image: url("../images/TireTreads.png")
 }
