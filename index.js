@@ -1,6 +1,6 @@
 $(document).ready(function () {
+    // The commented-out code below was an attempt to access the JSON data in bikes.json. Having a brain fart and can't figure out why it's not working. 
     // const fs = require("fs");
-
     // fs.readFile("bikes.json", "utf8", function (err, data) {
     //     if (err) {
     //         throw (err);
@@ -71,7 +71,7 @@ $(document).ready(function () {
         {
             "name": "Vegas",
             "make": "victory",
-            "image": "./images/victory/VictoryVegas"
+            "image": "./images/victory/VictoryVegas.png"
         }
     ]
 
@@ -82,8 +82,18 @@ $(document).ready(function () {
     //     $("#bikesContainer").append(bikeDiv);
     // });
     for (var i = 0; i < bikesArray.length; i++) {
-        const bikeDiv = $("<div>");
-        bikeDiv.text(bikesArray[i].name);
-        $("#bikesContainer").append(bikeDiv);
+        // const bikeDiv = $("<div>");
+        // bikeDiv.text(bikesArray[i].name);
+        const bikeCard = `<div class="col-sm-4">
+            <div class="card card-victory" style = {{width: 18rem;}}>
+                <img src="${bikesArray[i].image}" class="card-img-top" alt="Bike Image">
+                    <div class="card-body">
+                        <h5 class="card-title">${bikesArray[i].name}</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        of
+                    the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div></div></div >`;
+        $("#bikesContainer").append(bikeCard);
     }
 });
