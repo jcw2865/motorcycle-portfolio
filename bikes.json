@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Dyna Wide Glide",
+        "make": "harley",
+        "image": "./images/harley/DynaWideGlide.png"
+    },
+    {
+        "name": "Road King",
+        "make": "harley",
+        "image": "./images/harley/RoadKing.png"
+    },
+    {
+        "name": "Softail",
+        "make": "harley",
+        "image": "./images/harley/Softail.png"
+    },
+    {
+        "name": "Sportster Nightster",
+        "make": "harley",
+        "image": "./images/harley/SportsterNightster.png"
+    },
+    {
+        "name": "Rocket III",
+        "make": "triumph",
+        "image": "./images/triumph/TriumphRocketIII.png"
+    },
+    {
+        "name": "Thruxton",
+        "make": "triumph",
+        "image": "./images/triumph/TriumphThruxton.png"
+    },
+    {
+        "name": "Thunderbird",
+        "make": "triumph",
+        "image": "./images/triumph/TriumphThunderbird.png"
+    },
+    {
+        "name": "Tiger Explorer",
+        "make": "triumph",
+        "image": "./images/triumph/TriumphTigerExplorer.png"
+    },
+    {
+        "name": "Empulse TT",
+        "make": "victory",
+        "image": "./images/victory/VictoryEmpulseTT.png"
+    },
+    {
+        "name": "Gunner",
+        "make": "victory",
+        "image": "./images/victory/VictoryGunner.png"
+    },
+    {
+        "name": "Octane",
+        "make": "victory",
+        "image": "./images/victory/VictoryOctane.png"
+    },
+    {
+        "name": "Vegas",
+        "make": "victory",
+        "image": "./images/victory/VictoryVegas"
+    }
+]
