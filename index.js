@@ -16,62 +16,62 @@ $(document).ready(function () {
         {
             "name": "Dyna Wide Glide",
             "make": "harley",
-            "image": "./images/harley/DynaWideGlide.png"
+            "image": "./images/harley/DynaWideGlideCompressed.png"
         },
         {
             "name": "Road King",
             "make": "harley",
-            "image": "./images/harley/RoadKing.png"
+            "image": "./images/harley/RoadKingCompressed.png"
         },
         {
             "name": "Softail",
             "make": "harley",
-            "image": "./images/harley/Softail.png"
+            "image": "./images/harley/SoftailCompressed.png"
         },
         {
             "name": "Sportster Nightster",
             "make": "harley",
-            "image": "./images/harley/SportsterNightster.png"
+            "image": "./images/harley/SportsterNightsterCompressed.png"
         },
         {
             "name": "Rocket III",
             "make": "triumph",
-            "image": "./images/triumph/TriumphRocketIII.png"
+            "image": "./images/triumph/TriumphRocketIIICompressed.png"
         },
         {
             "name": "Thruxton",
             "make": "triumph",
-            "image": "./images/triumph/TriumphThruxton.png"
+            "image": "./images/triumph/TriumphThruxtonCompressed.png"
         },
         {
             "name": "Thunderbird",
             "make": "triumph",
-            "image": "./images/triumph/TriumphThunderbird.png"
+            "image": "./images/triumph/TriumphThunderbirdCompressed.png"
         },
         {
             "name": "Tiger Explorer",
             "make": "triumph",
-            "image": "./images/triumph/TriumphTigerExplorer.png"
+            "image": "./images/triumph/TriumphTigerExplorerCompressed.png"
         },
         {
             "name": "Empulse TT",
             "make": "victory",
-            "image": "./images/victory/VictoryEmpulseTT.png"
+            "image": "./images/victory/VictoryEmpulseTTCompressed.png"
         },
         {
             "name": "Gunner",
             "make": "victory",
-            "image": "./images/victory/VictoryGunner.png"
+            "image": "./images/victory/VictoryGunnerCompressed.png"
         },
         {
             "name": "Octane",
             "make": "victory",
-            "image": "./images/victory/VictoryOctane.png"
+            "image": "./images/victory/VictoryOctaneCompressed.png"
         },
         {
             "name": "Vegas",
             "make": "victory",
-            "image": "./images/victory/VictoryVegas.png"
+            "image": "./images/victory/VictoryVegasCompressed.png"
         }
     ]
     harleys = [];
