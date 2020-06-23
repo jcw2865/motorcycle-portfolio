@@ -114,7 +114,6 @@ $(document).ready(function () {
     triumphs = [];
     victorys = [];
     const pageTheme = $("title")[0].innerHTML;
-    console.log(pageTheme);
     // Page theme options are "Motorcycle Portfolio", "Harley-Davidson", "Triumph", and "Victory"
 
     // HOME PAGE CARD FXN
@@ -168,8 +167,28 @@ $(document).ready(function () {
                     <div class="card-body">
                         <h5 class="card-title">${harleys[i].name}</h5>
                         <p class="card-text">${harleys[i].description}</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div></div></div >`;
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#${harleys[i].id}">Go somewhere</button>
+                        <div class="modal fade" id="${harleys[i].id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Go Somewhere with a ${harleys[i].name}</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Google Maps API coming soon.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div >`;
             $("#bikesContainer").append(bikeCard);
         };
     }
@@ -189,8 +208,28 @@ $(document).ready(function () {
                     <div class="card-body">
                         <h5 class="card-title">${triumphs[i].name}</h5>
                         <p class="card-text">${triumphs[i].description}</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div></div></div >`;
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#${triumphs[i].id}">Go somewhere</button>
+                        <div class="modal fade" id="${triumphs[i].id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Go Somewhere with a ${triumphs[i].name}</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Google Maps API coming soon.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div >`;
             $("#bikesContainer").append(bikeCard);
         };
     }
@@ -210,8 +249,28 @@ $(document).ready(function () {
                     <div class="card-body">
                         <h5 class="card-title">${victorys[i].name}</h5>
                         <p class="card-text">${victorys[i].description}</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div></div></div >`;
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#${victorys[i].id}">Go somewhere</button>
+                        <div class="modal fade" id="${victorys[i].id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Go Somewhere with a ${victorys[i].name}</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Google Maps API coming soon.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div >`;
             $("#bikesContainer").append(bikeCard);
         };
     }
