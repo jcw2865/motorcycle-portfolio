@@ -74,17 +74,17 @@ $(document).ready(function () {
             "image": "./images/victory/VictoryVegas.png"
         }
     ]
+    harleys = [];
+    triumphs = [];
+    victorys = [];
+    const pageTheme = $("title")[0].innerHTML;
+    console.log(pageTheme);
+    // Page theme options are "Motorcycle Portfolio", "Harley-Davidson", "Triumph", and "Victory"
 
-    // The below method works, but we'll use a for-loop so we can access the index.
-    // bikesArray.forEach(function (bikesArray) {
-    //     const bikeDiv = $("<div>")
-    //     bikeDiv.text(bikesArray.name);
-    //     $("#bikesContainer").append(bikeDiv);
-    // });
-    for (var i = 0; i < bikesArray.length; i++) {
-        // const bikeDiv = $("<div>");
-        // bikeDiv.text(bikesArray[i].name);
-        const bikeCard = `<div class="col-sm-4">
+    // HOME PAGE CARD FXN
+    if (pageTheme === "Motorcycle Portfolio") {
+        for (var i = 0; i < bikesArray.length; i++) {
+            const bikeCard = `<div class="col-sm-4">
             <div class="card card-victory" style = {{width: 18rem;}}>
                 <img src="${bikesArray[i].image}" class="card-img-top" alt="Bike Image">
                     <div class="card-body">
@@ -94,6 +94,76 @@ $(document).ready(function () {
                     the card's content.</p>
                         <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div></div></div >`;
-        $("#bikesContainer").append(bikeCard);
+            $("#bikesContainer").append(bikeCard);
+        };
+    }
+    // HARLEY PAGE CARD FXN
+    else if (pageTheme === "Harley-Davidson") {
+        bikesArray.forEach(bike => {
+            // console.log(bike);
+            if (bike.make === "harley") {
+                harleys.push(bike);
+            };
+        });
+        console.log(harleys);
+        for (var i = 0; i < harleys.length; i++) {
+            const bikeCard = `<div class="col-sm-4">
+            <div class="card card-victory" style = {{width: 18rem;}}>
+                <img src="${harleys[i].image}" class="card-img-top" alt="Bike Image">
+                    <div class="card-body">
+                        <h5 class="card-title">${harleys[i].name}</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        of
+                    the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div></div></div >`;
+            $("#bikesContainer").append(bikeCard);
+        };
+    }
+    // TRIUMPH PAGE CARD FXN
+    else if (pageTheme === "Triumph") {
+        bikesArray.forEach(bike => {
+            // console.log(bike);
+            if (bike.make === "triumph") {
+                triumphs.push(bike);
+            };
+        });
+        console.log(triumphs);
+        for (var i = 0; i < triumphs.length; i++) {
+            const bikeCard = `<div class="col-sm-4">
+            <div class="card card-victory" style = {{width: 18rem;}}>
+                <img src="${triumphs[i].image}" class="card-img-top" alt="Bike Image">
+                    <div class="card-body">
+                        <h5 class="card-title">${triumphs[i].name}</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        of
+                    the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div></div></div >`;
+            $("#bikesContainer").append(bikeCard);
+        };
+    }
+    // VICTORY PAGE CARD FXN
+    else if (pageTheme === "Victory") {
+        bikesArray.forEach(bike => {
+            // console.log(bike);
+            if (bike.make === "victory") {
+                victorys.push(bike);
+            };
+        });
+        console.log(victorys);
+        for (var i = 0; i < victorys.length; i++) {
+            const bikeCard = `<div class="col-sm-4">
+            <div class="card card-victory" style = {{width: 18rem;}}>
+                <img src="${victorys[i].image}" class="card-img-top" alt="Bike Image">
+                    <div class="card-body">
+                        <h5 class="card-title">${victorys[i].name}</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                        of
+                    the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div></div></div >`;
+            $("#bikesContainer").append(bikeCard);
+        };
     }
 });
