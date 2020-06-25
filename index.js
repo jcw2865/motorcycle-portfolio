@@ -118,6 +118,16 @@ $(document).ready(function () {
 
     // HOME PAGE CARD FXN
     if (pageTheme === "Motorcycle Portfolio") {
+        const ftdBike = `
+        <div class="jumbotron">
+            <h1 class="display-4">This Month's Featured Bike - Demona</h1>
+            <img id="ftdpic" src="./images/DemonaCompressed.png" alt="Featured Bike">
+            <p class="lead">Demona is a 2005 Harley-Davidson Sportster</p>
+            <hr class="my-4">
+            <p>Click the button below to learn more about Harley-Davidson bikes. </p>
+            <a class="btn btn-primary btn-lg" id="learnmore" href="./harley.html" role="button">Learn more</a>
+        </div>`;
+        $("#ftdBike").append(ftdBike);
         for (var i = 0; i < bikesArray.length; i++) {
             const bikeCard =
                 `<div class="col-sm-4">
